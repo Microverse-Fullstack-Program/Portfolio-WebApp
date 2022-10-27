@@ -6,8 +6,8 @@ Portfolio is the easiest way of showing what we're truly capable of as a develop
 
 ## Built With
 
-- HTML
-- CSS
+- HTML5
+- CSS: Flex
 
 ## Live Demo (if available)
 
