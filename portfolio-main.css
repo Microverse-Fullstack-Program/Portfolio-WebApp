@@ -68,13 +68,16 @@
 }
 
 .primary-text {
-  height: 124px;
   font-family: 'Crete Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+}
+
+.headline .primary-text {
+  height: 124px;
 }
 
 .support-text {
@@ -128,7 +131,101 @@ p.description {
   list-style: none;
 }
 
-footer {
-  height: 40px;
-  margin-top: 10px;
+/* Recent works section */
+.recent-works {
+  display: grid;
+  grid-template-rows: 317px 618px;
+  width: 375px;
+  height: 1290px;
+  position: absolute;
+  top: 682px;
+}
+
+/* Title */
+.works-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 375px;
+  height: 317px;
+}
+
+.works-title h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.works-title hr {
+  width: 327px;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #212121;
+}
+
+/* Multi stories and featured image section */
+.multi-stories {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  gap: 24px;
+  width: 375px;
+  height: 568px;
+  top: 989px;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 327px;
+  height: 307px;
+}
+
+.right-block h2,
+.right-block p,
+.work-cards h2,
+.work-cards p {
+  font-style: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  color: #091e42;
+}
+
+.right-block h2,
+.work-cards h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.right-block h2 {
+  width: 327px;
+  height: 36px;
+  color: #091e42;
+}
+
+.work-cards h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 295px;
+  height: 173px;
+  color: #fff;
+}
+
+.right-block p {
+  width: 327px;
+  height: 257px;
+  font-size: 16px;
+  line-height: 24px;
 }
