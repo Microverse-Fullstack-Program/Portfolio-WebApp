@@ -272,7 +272,6 @@ p.description {
   border: 1px solid #8993a4;
 }
 
-
 button {
   display: flex;
   padding: 12px;
@@ -295,7 +294,7 @@ button:hover {
 }
 
 button:active {
-  color:blue;
+  color: blue;
   opacity: 1;
 }
 
