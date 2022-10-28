@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "> In this project, I set up a \"Hello world\" repository. It has no complex coding. The goal is to master all of the tools and best practices I learned about remote Software Engineer in previous steps.",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cherelemma/Hello-world.git"
+    "url": "git+https://github.com/cherelemma/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cherelemma/Hello-world/issues"
+    "url": "https://github.com/cherelemma/Portfolio/issues"
   },
-  "homepage": "https://github.com/cherelemma/Hello-world#readme",
+  "homepage": "https://github.com/cherelemma/Portfolio#readme",
   "devDependencies": {
     "hint": "^7.1.3",
     "stylelint": "^13.13.1",
