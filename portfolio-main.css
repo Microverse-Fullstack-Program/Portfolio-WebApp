@@ -272,9 +272,6 @@ p.description {
   border: 1px solid #8993a4;
 }
 
-.work-cards .tags li {
-  background: rgba(255, 255, 255, 0.24);
-}
 
 button {
   display: flex;
@@ -289,6 +286,23 @@ button {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+button:active {
+  color:blue;
+  opacity: 1;
+}
+
+button:focus {
+  cursor: grab;
+  border-radius: 10px;
+  border-color: aqua;
 }
 
 .right-block button {
