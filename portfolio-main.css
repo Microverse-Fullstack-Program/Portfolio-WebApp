@@ -396,3 +396,37 @@ button:focus {
   color: #fff;
   font-size: 32px;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 840px;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  left: 0px;
+  top: 5740px;
+  font-family: 
+  font-style: normal;
+}
+
+.contact p {
+	width: 327px;
+	height: 216px;
+	font-weight: 750;
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	color: #172B4D;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top:25px;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+}
