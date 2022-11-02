@@ -430,3 +430,39 @@ button:focus {
   width: 327px;
   height: 330px;
 }
+
+.contact input {
+	width:327px;
+	height: 32px;
+	left: 16px;
+	right: 16px;	
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	border: 14px;
+	border:none;
+	border-bottom: 1px solid #DBD8D7;
+}
+
+.contact textarea {
+	width: 327px;
+	height: 114px;
+	left: 16px;
+	right: 16px;	
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	border:none;
+}
+
+#get-in-touch {
+	display: flex;
+	flex-direction: row;
+	align-self:center;
+	align-items: center;
+	gap: 10px;
+	width: 131px;
+	height: 48px;
+	padding: 12px;
+	background: #FF6B00;
+}
