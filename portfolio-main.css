@@ -414,9 +414,10 @@ button:focus {
 .contact p {
   width: 327px;
   height: 216px;
-  font-weight: 750;
-  font-size: 34px;
-  line-height: 42px;
+  padding: 20px 6px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   color: #172b4d;
 }
@@ -425,7 +426,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 125px;
+  margin-top: 75px;
   gap: 24px;
   width: 327px;
   height: 330px;
@@ -439,7 +440,6 @@ button:focus {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  border: 14px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
 }
@@ -453,6 +453,8 @@ button:focus {
   font-size: 16px;
   line-height: 24px;
   border: none;
+  padding: 12px;
+  background: #fbf8f7
 }
 
 #get-in-touch {
