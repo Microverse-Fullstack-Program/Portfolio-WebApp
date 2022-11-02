@@ -466,3 +466,46 @@ button:focus {
 	padding: 12px;
 	background: #FF6B00;
 }
+
+
+.bottom_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap:wrap;
+  position: absolute;
+  width: 375px;
+  height: 72px;
+  left: 0px;
+  top: 6590px;
+}
+
+#breakline {
+position: absolute;
+top:0;
+height: 1px;
+background-color: #DFE1E6;
+}
+
+#indicator {
+	position: absolute;
+	bottom: 8px;
+	width: 134px;
+	height: 5px;
+	background: #0D151E;
+	border-radius: 10px;
+}
+
+.bottom_nav ul {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap:32px;
+position: absolute;
+width: 200px;
+height: 40px;
+list-style:none;
+}
