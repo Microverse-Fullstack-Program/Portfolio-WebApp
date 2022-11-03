@@ -62,7 +62,7 @@
   height: 590px;
   left: 0;
   top: 92px;
-  background-image: url(images/background-image.png);
+  background-image: url(../images/background-image.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -331,7 +331,7 @@ button:focus {
 .work-cards {
   width: 327px;
   height: 520px;
-  background-image: url(images/mask_group.png);
+  background-image: url(../images/mask_group.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -352,7 +352,7 @@ button:focus {
   height: 683px;
   left: 0;
   top: 4137px;
-  background-image: url(images/about_bkgr.png);
+  background-image: url(../images/about_bkgr.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
