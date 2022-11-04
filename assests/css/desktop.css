@@ -232,18 +232,18 @@
     color: #fff;
     border: none;
   }
-  
+
   button:hover {
-    background: #FFF5E1;
-    border: 1px solid #F55800;
+    background: #fff5e1;
+    border: 1px solid #f55800;
   }
-  
+
   button:focus {
-    background: #E05304;
+    background: #e05304;
   }
-  
+
   button:disabled {
-    background: #F4F1F0;
+    background: #f4f1f0;
   }
 
   /* Multi stories and featured image section */
@@ -418,15 +418,6 @@
     text-align: center;
   }
 
-  .skills-container li {
-    list-style: none;
-    color: #fff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-  }
-
   .work-cards button {
     width: 327px;
     display: flex;
@@ -515,6 +506,7 @@
     font-size: 22px;
     line-height: 54px;
     color: #fff;
+    list-style: none;
   }
 
   .footer-container {

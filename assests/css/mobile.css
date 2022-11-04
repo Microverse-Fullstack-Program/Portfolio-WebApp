@@ -55,13 +55,13 @@
   display: none;
 }
 
-  /* Headline Styling */
-  .headline-container {
-    display: flex;
-    background-image: url(../images/background-image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+/* Headline Styling */
+.headline-container {
+  display: flex;
+  background-image: url(../images/background-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .headline {
   display: flex;
@@ -286,7 +286,7 @@ button {
   gap: 10px;
   height: 48px;
   background: #ff6b00;
-  font-family:  Inter, sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -301,9 +301,9 @@ button:enabled {
 }
 
 button:hover {
-  background: #FFF5E1;
+  background: #fff5e1;
   border: 1px solid #f55800;
-  color: #F55800;
+  color: #f55800;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
