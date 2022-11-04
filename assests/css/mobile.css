@@ -53,7 +53,7 @@
   }
 
   .top-nav {
-    visibility: hidden;
+    display: none;
   }
 
   /* Headline Styling */
@@ -344,6 +344,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .work-cards-desk {
+    display: none;
   }
 
   /* About Us section */
