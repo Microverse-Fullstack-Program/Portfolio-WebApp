@@ -1,5 +1,4 @@
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   /* Status bar and navigation bar style */
   .nav-bar {
     display: flex;
@@ -26,7 +25,7 @@
     font-size: 20px;
     text-align: center;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
   }
 
   .navigation {
@@ -47,7 +46,6 @@
   }
 
   .top-nav ul {
-    width: 155px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -100,7 +98,7 @@
     left: 186px;
     top: 72px;
     gap: 24px;
-    padding: 45px 0px;
+    padding: 45px 0;
   }
 
   .primary-text {
@@ -193,7 +191,7 @@
 
   .works-title hr {
     width: 451px;
-    border: 0.115px solid #8993a4
+    border: 0.115px solid #8993a4;
   }
 
   .works-title h2 {
@@ -212,75 +210,6 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #212121;
-  }
-
-  /* Multi stories and featured image section */
-  .multi-stories {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0 24px;
-    gap: 24px;
-    width: 90%;
-    height: 448px;
-    position: relative;
-    top: 114px;
-  }
-
-  .multi-stories img {
-    height: 448px;
-    width: 100%;
-  }
-
-  .right-block {
-    display: grid;
-    grid-template-rows: 1fr 2.5fr 1fr 1fr;
-    gap: 10px;
-    width:fit-content;
-    min-height: 418px;
-  }
-
-  .right-block h2 {
-    font-family: Crete Round, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    color: #091E42;
-  }
-
-  .right-block p {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 28px;
-    min-height: 140px;
-    max-width: 448px;
-  }
-
-  .right-block li {
-    color: #091e42;
-  }
-
-  .tags ul {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 70%;
-  }
-
-  .tags li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 12px;
-    width: 90px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.24);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    border: 1px solid #8993a4;
   }
 
   button {
@@ -318,7 +247,76 @@
     width: 124px;
   }
 
-/* style for work cards section */
+  /* Multi stories and featured image section */
+  .multi-stories {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 24px;
+    gap: 24px;
+    width: 90%;
+    height: 448px;
+    position: relative;
+    top: 114px;
+  }
+
+  .multi-stories img {
+    height: 448px;
+    width: 100%;
+  }
+
+  .right-block {
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 1fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    min-height: 418px;
+  }
+
+  .right-block h2 {
+    font-family: Crete Round, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .right-block p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    min-height: 140px;
+    max-width: 448px;
+  }
+
+  .right-block li {
+    color: #091e42;
+  }
+
+  .tags ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 70%;
+  }
+
+  .tags li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    width: 90px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.24);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #8993a4;
+  }
+
+  /* style for work cards section */
   .work-frame {
     display: flex;
     flex-flow: row wrap;
@@ -334,7 +332,7 @@
   .work-cards {
     display: none;
   }
-  
+
   .work-cards-desk {
     display: flex;
     flex-direction: column;
@@ -356,7 +354,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
+
   .img-placeholder4 {
     background-image: url(../images/img_placeholder4.png);
     background-size: cover;
@@ -418,7 +416,7 @@
     font-size: 22px;
     line-height: 43px;
   }
-  
+
   .work-cards button {
     width: 327px;
     display: flex;
@@ -445,8 +443,9 @@
     background-repeat: no-repeat;
   }
 
-  .about-us h2, 
-  .about-us p, button {
+  .about-us h2,
+  .about-us p,
+  .about-us button {
     position: relative;
     left: 42px;
   }
@@ -455,7 +454,7 @@
     max-width: 566px;
   }
 
-  .about-us p {
+  .about-us > p {
     color: #f4f5f7;
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -490,7 +489,7 @@
 
   .skills-container h2,
   .skills-container ul {
-    font-family: Inter sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -504,7 +503,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 225x;
+    width: 225px;
     height: 42px;
     color: #fff;
     font-size: 32px;
@@ -515,7 +514,7 @@
     border: 0.115px solid #fff;
     position: relative;
     top: 115px;
-    margin: auto;;
+    margin: auto;
   }
 
   .contact {
