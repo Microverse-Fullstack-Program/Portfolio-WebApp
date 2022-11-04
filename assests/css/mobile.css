@@ -26,7 +26,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 16px;
   text-align: center;
@@ -57,8 +57,9 @@
 
 /* Headline Styling */
 .headline-container {
-  display: flex;
-  background-image: url(../images/background-image.png);
+  width: 375px;
+  height: 749px;
+  background-image: url(../images/about_bkgr.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -86,9 +87,10 @@
 
 .headline .primary-text {
   height: 124px;
+  margin-top: 113px;
 }
 
-.support-text {
+.headline .support-text {
   height: 57px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -98,9 +100,9 @@
   align-items: center;
 }
 
-.description {
+.headline .description {
   height: 123px;
-  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -123,9 +125,11 @@ p.description {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: px;
   width: 200px;
   height: 40px;
+  position: absolute;
+  top: 537px;
+  left: 25px;
 }
 
 .social-icons img {
@@ -144,9 +148,9 @@ p.description {
   display: grid;
   grid-template-rows: 317px 618px;
   width: 375px;
-  height: 1290px;
+  height: 290px;
   position: absolute;
-  top: 682px;
+  top: 722px;
 }
 
 /* Title */
@@ -159,10 +163,12 @@ p.description {
   gap: 24px;
   width: 375px;
   height: 317px;
+  position: absolute;
+  top: 19px;
 }
 
 .works-title h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 600px;
   font-size: 40px;
@@ -186,7 +192,8 @@ p.description {
   gap: 24px;
   width: 375px;
   height: 568px;
-  top: 989px;
+  position: absolute;
+  top: 319px;
 }
 
 .right-block {
@@ -197,6 +204,8 @@ p.description {
   gap: 12px;
   width: 327px;
   height: 307px;
+  position: relative;
+  top: 14px;
 }
 
 .right-block h2,
@@ -204,7 +213,7 @@ p.description {
 .work-cards h2,
 .work-cards p {
   font-style: normal;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   color: #091e42;
 }
@@ -225,9 +234,9 @@ p.description {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   width: 295px;
-  height: 173px;
+  height: 103px;
+  margin-top: 145px;
   color: #fff;
 }
 
@@ -242,20 +251,13 @@ p.description {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 295px;
+  width: 290px;
   height: 93px;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 10px;
+  top: 1252px;
   color: #fff;
-}
-
-.skills-container li {
-  list-style: none;
-  color: #fff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
 }
 
 .tags ul {
@@ -340,6 +342,8 @@ button:disabled {
   gap: 45px;
   width: 375px;
   height: 2836px;
+  position: relative;
+  top: 1292px;
 }
 
 .work-cards {
@@ -369,64 +373,69 @@ button:disabled {
   width: 375px;
   height: 683px;
   left: 0;
-  top: 4137px;
+  top: 4237px;
   background-image: url(../images/about_bkgr.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .skills-container {
-  display: grid;
-  grid-template-rows: 30% 35% 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 375px;
   height: 922px;
   top: 4819px;
   background-color: #1c1a19;
+  row-gap: 32px;
 }
 
 .skills-category {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 0;
-  gap: 24px;
+  padding: 10px;
+  gap: 18px;
+  font-weight: 700;
+  font-size: 32px;
+  height: 34px;
+  color: #fff;
 }
 
-.skills-container h2,
-.skills-container ul {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.skills-container h2 {
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 64px;
   color: #fff;
 }
 
-.skils-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 12px;
-  gap: 12px;
-  width: 225.46px;
-  height: 41.46px;
+.skills-container li {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 44px;
+  text-align: center;
   color: #fff;
-  font-size: 32px;
+  list-style: none;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 840px;
+  height: 940px;
   padding: 120px 24px;
   gap: 12px;
   position: absolute;
   left: 0;
   top: 5740px;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal;
+  font-family: Inter, sans-serif;
 }
 
 .contact p {
@@ -495,10 +504,11 @@ button:disabled {
   gap: 32px;
   flex-wrap: wrap;
   position: absolute;
+  bottom: 10px;
   width: 375px;
   height: 72px;
   left: 0;
-  top: 6590px;
+  top: 6550px;
 }
 
 #breakline {
@@ -523,7 +533,7 @@ button:disabled {
   align-items: center;
   padding: 0;
   gap: 32px;
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 40px;
   list-style: none;
