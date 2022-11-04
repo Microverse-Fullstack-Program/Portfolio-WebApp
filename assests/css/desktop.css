@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 92px;
     margin: auto;
     top: 0;
@@ -15,9 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 160px;
-    position: relative;
-    left: 143px;
+    align-items: center;
+    width: 170px;
+    position: absolute;
+    top: 16px;
+    left: 73px;
     font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 700;
@@ -79,11 +81,10 @@
 
   /* Headline Styling */
   .headline-container {
-    display: flex;
-    margin: auto;
-    width: 80%;
+    width: 100%;
     height: 649px;
-    top: 72px;
+    top: 0;
+    left: 0;
     background-image: url(../images/about-bkgr-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,17 +93,17 @@
   .headline {
     display: flex;
     flex-direction: column;
-    max-width: 566px;
+    width: 566px !important;
     height: 540px;
-    position: relative;
-    left: 186px;
-    top: 72px;
-    gap: 24px;
-    padding: 45px 0;
+    margin: 0;
+    left: 103px;
   }
 
   .primary-text {
-    height: 90px;
+    height: 160px;
+    width: 566px !important;
+    position: relative;
+    top: 12px;
     font-style: normal;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
@@ -111,16 +112,15 @@
     color: #ff6b00;
   }
 
-  .headline .primary-text {
-    height: 160px;
-  }
-
   .headline .support-text {
     display: flex;
     align-items: center;
-    height: 40px;
+    width: 566px;
+    height: 24px;
+    position: relative;
+    top: 65px;
     font-style: normal;
-    font-family: Roboto, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -129,6 +129,9 @@
 
   .headline .description {
     height: 123px;
+    width: 565px;
+    position: relative;
+    top: 72px;
     font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -138,7 +141,7 @@
   }
 
   .description > p {
-    left: 13%;
+    left: 25px;
   }
 
   /* Social Media */
@@ -148,15 +151,15 @@
     justify-content: center;
     align-self: center;
     position: absolute;
-    max-width: 120px;
+    max-width: 50px;
     height: 40px;
-    left: 13%;
+    left: 25px;
   }
 
   .social-icons img {
     padding: 8px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 8px;
   }
 
@@ -170,7 +173,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 1290px;
     position: relative;
     top: 112px;
@@ -181,20 +184,22 @@
   .works-title {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 0;
     gap: 24px;
-    width: 90%;
+    width: 100%;
     height: 52px;
   }
 
   .works-title hr {
-    width: 451px;
-    border: 0.115px solid #8993a4;
+    width: 594px;
+    height: 0;
+    border: 1px solid #212121;
   }
 
   .works-title h2 {
+    width: 315px;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -214,8 +219,9 @@
 
   button {
     display: flex;
-    padding: 12px;
+    width: 173px;
     height: 48px;
+    gap: 10px;
     background: #ff6b00;
     font-family: sans-serif;
     font-style: normal;
@@ -226,25 +232,18 @@
     color: #fff;
     border: none;
   }
-
+  
   button:hover {
-    background-color: orange;
-    cursor: pointer;
+    background: #FFF5E1;
+    border: 1px solid #F55800;
   }
-
-  button:active {
-    color: blue;
-    opacity: 1;
-  }
-
+  
   button:focus {
-    cursor: grab;
-    border-radius: 10px;
-    border-color: aqua;
+    background: #E05304;
   }
-
-  .right-block button {
-    width: 124px;
+  
+  button:disabled {
+    background: #F4F1F0;
   }
 
   /* Multi stories and featured image section */
@@ -253,7 +252,7 @@
     grid-template-columns: 50% 50%;
     padding: 0 24px;
     gap: 24px;
-    width: 90%;
+    width: 100%;
     height: 448px;
     position: relative;
     top: 114px;
@@ -269,7 +268,7 @@
     grid-template-rows: 1fr 2.5fr 1fr 1fr;
     gap: 10px;
     width: fit-content;
-    min-height: 418px;
+    height: 318px;
   }
 
   .right-block h2 {
@@ -287,24 +286,21 @@
     font-weight: 400;
     font-size: 19px;
     line-height: 28px;
-    min-height: 140px;
-    max-width: 448px;
-  }
-
-  .right-block li {
-    color: #091e42;
+    height: 140px;
+    width: 432px;
   }
 
   .tags ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: 70%;
+    width: 100%;
   }
 
   .tags li {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 10px 12px;
     width: 90px;
@@ -314,6 +310,11 @@
     font-size: 15px;
     line-height: 20px;
     border: 1px solid #8993a4;
+  }
+
+  .right-block button {
+    width: 139px;
+    text-align: center;
   }
 
   /* style for work cards section */
@@ -337,13 +338,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     position: relative;
-    padding-left: 25px;
     width: 32%;
     height: 435px;
   }
 
   .img-placeholder2 {
+    border: #1c1a19 1px solid;
     background-image: url(../images/img_placeholder2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -375,28 +377,36 @@
     color: #fff;
     font-size: 32px;
     line-height: 44px;
+    padding-left: 10px;
   }
 
   .work-cards-desk h2 {
     display: flex;
-    align-items: center;
-    height: 93px;
-    width: 100%;
-    padding-top: 214px;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 193px;
+    width: 337px;
+    position: relative;
+    margin-top: 80px;
   }
 
   .work-cards-desk p {
     display: flex;
     align-items: center;
-    max-width: 337px;
-    max-height: 83px;
-    padding-top: 45px;
+    width: 337px;
+    height: 103px;
+    margin: 0;
     position: relative;
-    left: 0;
     font-size: 16px;
     line-height: 24px;
     font-family: Inter, serif;
     color: #fff;
+  }
+
+  .work-cards-desk li {
+    background: rgba(255, 255, 255, 0.24);
+    color: #fff;
+    margin-bottom: 20px;
   }
 
   #button-width {
@@ -434,10 +444,10 @@
     padding: 120px 24px;
     gap: 24px;
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 593px;
     margin: auto;
-    top: 338px;
+    top: 438px;
     background-image: url(../images/about_bkgr2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -464,80 +474,78 @@
     width: 65%;
   }
 
+  .about-us hr {
+    width: 80%;
+    border: 0.115px solid rgb(58, 56, 56);
+    position: relative;
+    top: 85px;
+    margin: auto;
+  }
+
   .skills-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 124px;
     position: relative;
     margin: auto;
-    width: 80%;
-    height: 422px;
-    top: 339px;
-    gap: 56px;
+    width: 100%;
+    height: 622px;
+    top: 438px;
+    padding-top: 155px;
     background-color: #1c1a19;
   }
 
   .skills-category {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 195px;
-    max-width: 1157px;
-  }
-
-  .skills-container h2,
-  .skills-container ul {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-  }
-
-  .skils-title {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 225px;
-    height: 42px;
-    color: #fff;
+    font-weight: 700;
     font-size: 32px;
+    height: 64px;
+    color: #fff;
   }
 
-  .about-us hr {
-    width: 80%;
-    border: 0.115px solid #fff;
+  .skills-container li {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 54px;
+    color: #fff;
+  }
+
+  .footer-container {
+    height: 678px;
+    width: 100%;
     position: relative;
-    top: 115px;
-    margin: auto;
+    top: 369px;
+    bottom: 0;
   }
 
   .contact {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
+    height: 615px;
     padding: 120px 24px;
     gap: 44px;
     position: relative;
-    margin: auto;
-    top: 339px;
+    top: 39px;
     font-family: sans-serif;
     font-style: normal;
   }
 
   .contact p {
-    max-width: 455px;
+    width: 340px;
     height: 216px;
     padding: 20px 6px;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    text-align: center;
+    text-align: left;
     color: #172b4d;
   }
 
@@ -545,7 +553,7 @@
     width: 567px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 20px;
     gap: 24px;
     height: 330px;
@@ -553,8 +561,8 @@
 
   .contact input {
     height: 32px;
+    left: 0;
     position: relative;
-    left: 16px;
     right: 16px;
     font-weight: 400;
     font-size: 18px;
@@ -567,8 +575,8 @@
     position: relative;
     width: 100%;
     height: 114px;
-    left: 16px;
     right: 16px;
+    left: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -577,41 +585,37 @@
     background: #fbf8f7;
   }
 
-  #get-in-touch {
+  .contact button {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    justify-content: center;
     gap: 10px;
-    width: 131px;
-    height: 48px;
-    padding: 12px;
-    background: #ff6b00;
+    width: 145px;
   }
 
   .bottom_nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 32px;
     flex-wrap: wrap;
     position: relative;
-    width: 80%;
+    width: 100%;
     height: 72px;
     left: 0;
-    top: 335px;
+    top: 0;
   }
 
   #breakline {
     position: absolute;
     top: 0;
     height: 1px;
-    background-color: #dfe1e6;
   }
 
   #indicator {
-    position: absolute;
-    bottom: 8px;
+    position: relative;
+    top: 25px;
     width: 134px;
     height: 5px;
     background: #0d151e;
@@ -622,11 +626,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    bottom: 25px;
     padding: 0;
     gap: 32px;
     position: absolute;
     width: 200px;
     height: 40px;
     list-style: none;
+  }
+
+  .bottom_nav li > img {
+    width: 20px;
+    height: 20px;
   }
 }
