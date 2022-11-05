@@ -644,5 +644,11 @@
   .multi-stories img:hover {
     transform: scale(1.2);
   }
+
+  .bottom_nav img:hover,
+  .social-icons img:hover {
+    border: 1px rgb(24, 211, 24) solid;
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
 }
  
