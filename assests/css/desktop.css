@@ -629,4 +629,9 @@
     width: 20px;
     height: 20px;
   }
+
+  .multi-stories img:hover {
+    transform: scale(1.2);
+  }
 }
+ 
