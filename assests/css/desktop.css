@@ -28,6 +28,17 @@
     text-align: center;
     color: #fff;
     text-decoration: none;
+    animation: logo-loader 10s normal;
+  }
+
+  @keyframes logo-loader {
+    0% {
+      rotate: none;
+    }
+
+    100% {
+      rotate: 1 1 0.5 360deg;
+    }
   }
 
   .navigation {
