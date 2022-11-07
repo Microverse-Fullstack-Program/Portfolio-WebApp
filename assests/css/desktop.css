@@ -28,6 +28,17 @@
     text-align: center;
     color: #fff;
     text-decoration: none;
+    animation: logo-loader 10s normal;
+  }
+
+  @keyframes logo-loader {
+    0% {
+      rotate: none;
+    }
+
+    100% {
+      rotate: 1 1 0.5 360deg;
+    }
   }
 
   .navigation {
@@ -538,6 +549,10 @@
     margin: auto;
   }
 
+  .contact p:hover {
+    transform: translateX(20%);
+  }
+
   .contact form {
     width: 567px;
     display: flex;
@@ -584,6 +599,14 @@
     width: 145px;
   }
 
+  .contact button:hover {
+    color: blue;
+    -webkit-transition: color 5s ease-out;
+    -moz-transition: color 5s ease-out;
+    -o-transition: color 5s ease-out;
+    transition: color 5s ease-out;
+  }
+
   .bottom_nav {
     display: flex;
     flex-direction: row;
@@ -628,5 +651,15 @@
   .bottom_nav li > img {
     width: 20px;
     height: 20px;
+  }
+
+  .multi-stories img:hover {
+    transform: scale(1.2);
+  }
+
+  .bottom_nav img:hover,
+  .social-icons img:hover {
+    border: 1px rgb(24, 211, 24) solid;
+    transform: scale3d(1.5, 1.5, 1.5);
   }
 }
