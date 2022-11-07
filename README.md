@@ -1,15 +1,17 @@
 # Portfolio
 
-> In this project, I set up a "Hello world" repository. It has no complex coding. The goal is to master all of the tools and best practices I learned about remote Software Engineer in previous steps.
+> In this project, I set up a "Portfolio" repository. It has no complex coding. The goal is to master all of the tools and best practices I learned about remote Software Engineer in previous steps.
 
 Portfolio is the easiest way of showing what we're truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what we can bring to their teams. In this project, I build a personal portfolio site by precisely replicate one of the portfolio templates provided by Microverse [the student portfolio templates](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1)
 
 ## Built With
 
 - HTML5
-- CSS: Flex
+- CSS: Flex, Grid and Media Query
+- 
 
-## Live Demo (if available)
+## Live Demo 
+- [My portfolio](https://microverse-fullstack-program.github.io/Portfolio/) 
 
 
 ## Getting Started
