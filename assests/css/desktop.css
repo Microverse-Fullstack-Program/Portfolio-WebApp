@@ -32,7 +32,7 @@
 
   .logo {
     animation: logo-loader 10s normal;
-  } 
+  }
 
   @keyframes logo-loader {
     0% {
