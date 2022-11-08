@@ -19,11 +19,11 @@
         </nav>
         <nav class="top-nav">
           <ul>
-            <li>Portoflio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#recent-works" target="_blank">Portoflio</a></li>
+            <li><a href="#About-me" target="_blank">About</a></li>
+            <li><a href="#Contact" target="_blank">Contact</a></li>
           </ul>
-          <img src="assests/images/icon_mail.png" alt="mail icon">
+	  <a href="#form" target="_blank"><img src="assests/images/icon_mail.png" alt="mail icon"></a>
         </nav>
     </header>
 
@@ -46,7 +46,7 @@
       </ul>
     </section>
 
-    <section class="recent-works">
+    <section class="recent-works" id="recent-works">
       <div class="works-title">
         <h2>My Recent Works</h2>
         <hr>
@@ -262,7 +262,7 @@
       </section>
     </section>
   
-    <section class="about-us">
+    <section class="about-us" id="About-me">
       <h2 class="primary-text">About me</h2>
       <p class="description">Hello I’m a software developer! I can help you build a product, 
         feature or website Look through some of my work and experience! 
@@ -317,10 +317,10 @@
   </main>
 
   <footer class="footer-container"> 
-    <section class="contact">
+    <section class="contact" id="Contact">
       <p>I'm always interested in hearing about new projects,
       so if you'd like to chat please get in touch</p>
-      <form action="https://formspree.io/f/xjvzpjgq" method="post">
+      <form action="https://formspree.io/f/xjvzpjgq" method="post" id="form">
         <label>Full Name</label>
         <input type="text" name="fullname" placeholder="Full Name" maxlength="30" required>
         <label>Email Address</label>
