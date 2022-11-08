@@ -563,6 +563,10 @@
     height: 330px;
   }
 
+  .contact label {
+    display: none;
+  }
+  
   .contact input {
     width: 100%;
     height: 32px;

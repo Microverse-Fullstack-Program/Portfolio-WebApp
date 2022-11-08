@@ -459,6 +459,10 @@ button:disabled {
   height: 330px;
 }
 
+.contact label {
+  display: none;
+}
+
 .contact input {
   width: 327px;
   height: 32px;
