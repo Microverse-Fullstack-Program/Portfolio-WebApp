@@ -78,7 +78,6 @@ img.navigation {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  background-color: #050505;
 }
 
 .headline .primary-text {
@@ -109,7 +108,6 @@ h2.support-text,
 p.description {
   width: 327px;
   font-style: normal;
-  background-color: #050505;
 }
 
 h2.support-text,
