@@ -92,9 +92,9 @@
     height: 186px !important;
     font-style: normal;
     font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
+    font-weight: 400 !important;
+    font-size: 72px !important;
+    line-height: 82px !important;
     color: #ff6b00;
     padding: 10px;
   }
