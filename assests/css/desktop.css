@@ -1,29 +1,14 @@
 @media (min-width: 768px) {
   /* Status bar and navigation bar style */
   .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
     width: 100%;
-    height: 92px;
-    margin: auto;
-    top: 0;
-    background: #3c3a39;
   }
 
-  .nav-bar a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    position: absolute;
-    top: 16px;
-    left: 73px;
-    font-style: normal;
+  /* logo pic / loge name styling */
+  .logo {
+    margin-left: 45px;
     font-family: Inter, sans-serif;
     font-weight: 700;
-    line-height: 20px;
     font-size: 20px;
     text-align: center;
     color: #fff;
@@ -41,60 +26,50 @@
     }
   }
 
+  /* hidde amber */
   .navigation {
-    visibility: hidden;
+    display: none;
   }
 
+  /* top navigation styling */
   .top-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 368px;
     position: relative;
-    height: 40px;
-    right: 94px;
-    top: calc(50% - 40px / 2);
-    border-radius: 8px;
-    color: #fff;
-  }
-
-  .top-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-    right: 36px;
-    gap: 8px;
-    width: 255px;
-  }
-
-  .top-nav li {
+    right: 114px;
     list-style: none;
+  }
+
+  .top-nav a {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+    color: #fff;
+    text-decoration: none;
   }
 
   .top-nav img {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 8px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    right: 24px;
-    top: calc(50% - 40px / 2);
+    width: 30px;
+    height: 30px;
     border-radius: 8px;
   }
 
-  /* Headline Styling */
-  .headline-container {
+  /* main container */
+  main {
+    height: auto;
+  }
+
+  /* Headline Section Styling */
+  .head-container {
     width: 100%;
     height: 849px;
-    top: 0;
+    position: absolute;
+    top: 72px;
     left: 0;
     background-image: url(../images/about-bkgr-desktop.png);
     background-size: cover;
@@ -104,78 +79,81 @@
   .headline {
     display: flex;
     flex-direction: column;
-    width: 566px !important;
-    height: 540px;
+    width: 613px;
+    height: 780px;
     margin: 0;
+    position: relative;
     left: 103px;
+    top: 0;
   }
 
   .primary-text {
-    height: 160px;
-    width: 566px !important;
-    position: relative;
-    top: 12px;
+    width: 466px !important;
+    height: 186px !important;
     font-style: normal;
     font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
+    font-weight: 400 !important;
+    font-size: 72px !important;
+    line-height: 82px !important;
     color: #ff6b00;
+    padding: 10px;
   }
 
-  .headline .support-text {
-    display: flex;
-    align-items: center;
-    width: 566px;
-    height: 24px;
-    position: relative;
-    top: 65px;
+  .support-text {
+    width: 566px !important;
+    height: max-content;
+    padding: 10px;
     font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
-    color: #fff;
   }
 
-  .headline .description {
-    height: 123px;
-    width: 565px;
-    position: relative;
-    top: 72px;
+  .description {
+    width: 566px !important;
+    height: max-content;
+    padding: 10px;
     font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+  }
+
+  h1.primary-text,
+  h2.support-text,
+  p.description {
+    font-style: normal;
+  }
+
+  h2.support-text,
+  p.description {
     color: #fff;
   }
 
-  .description > p {
-    left: 25px;
+  /* Social Media */
+  .social-media {
+    display: flex;
+    width: 87px;
+    height: 456px;
+    position: absolute;
+    left: 0%;
+    top: 117px;
   }
 
-  /* Social Media */
-  .social-icons {
+  .social-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
-    position: absolute;
-    max-width: 50px;
-    height: 40px;
-    left: 25px;
+    margin-left: 10px;
   }
 
-  .social-icons img {
+  .social-media img {
     padding: 8px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 8px;
-  }
-
-  .social-icons li {
-    list-style: none;
   }
 
   /* Recent works section */
@@ -185,10 +163,9 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 1290px;
+    height: 1590px;
     position: relative;
-    top: 112px;
-    margin: auto;
+    top: 1132px;
   }
 
   /* Title */
@@ -221,7 +198,6 @@
 
   .works-title img {
     width: 327px;
-    height: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +248,8 @@
 
   .multi-stories img {
     height: 448px;
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 
   .right-block {
@@ -334,13 +311,10 @@
   .work-frame {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    top: 135px;
-    gap: 10px;
+    top: 115px;
+    gap: 1px;
     width: 100%;
-    height: 970px;
+    margin: auto;
   }
 
   .work-cards {
@@ -349,11 +323,11 @@
 
   .work-cards-desk {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
     position: relative;
-    width: 32%;
+    width: 369px;
     height: 435px;
   }
 
@@ -450,7 +424,7 @@
     position: relative;
     width: 100%;
     height: 593px;
-    top: 438px;
+    top: 1438px;
     background-image: url(../images/about_bkgr2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -460,7 +434,7 @@
   .about-us p,
   .about-us button {
     position: relative;
-    left: 42px;
+    left: 10%;
   }
 
   .about-us p {
@@ -494,18 +468,17 @@
     position: relative;
     margin: auto;
     width: 100%;
-    height: 822px;
-    top: 435px;
+    height: 652px;
+    top: 1437px;
     padding-top: 150px;
-    background-color: #262626;
+    background-color: #221e1e;
   }
 
   .skills-category {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    align-self: center;
     font-weight: 700;
     font-size: 32px;
     height: 64px;
@@ -516,23 +489,18 @@
     display: flex;
   }
 
-  .footer-container {
-    height: 678px;
-    width: 100%;
-    position: relative;
-    top: 369px;
-    bottom: 0;
-  }
-
   .contact {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
     height: 615px;
+    margin: auto;
     padding: 120px 24px;
     gap: 44px;
     position: relative;
-    top: 39px;
+    top: 1469px;
+    left: 10%;
     font-family: sans-serif;
     font-style: normal;
   }
@@ -546,7 +514,6 @@
     line-height: 44px;
     text-align: left;
     color: #172b4d;
-    margin: auto;
   }
 
   .contact p:hover {
@@ -563,8 +530,12 @@
     height: 330px;
   }
 
+  .contact label {
+    display: none;
+  }
+
   .contact input {
-    width: 100%;
+    width: 90%;
     height: 32px;
     left: 0;
     position: relative;
@@ -578,7 +549,7 @@
 
   .contact textarea {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 114px;
     right: 16px;
     left: 0;
@@ -615,9 +586,9 @@
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    height: 72px;
+    height: 92px;
     left: 0;
-    top: 0;
+    top: 1450px;
   }
 
   #breakline {
@@ -644,13 +615,13 @@
     gap: 32px;
     position: absolute;
     width: 200px;
-    height: 40px;
+    height: 60px;
     list-style: none;
   }
 
   .bottom_nav li > img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .multi-stories img:hover {
@@ -658,8 +629,8 @@
   }
 
   .bottom_nav img:hover,
-  .social-icons img:hover {
+  .social-media img:hover {
     border: 1px rgb(24, 211, 24) solid;
-    transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
 }
