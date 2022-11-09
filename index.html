@@ -319,12 +319,12 @@
       <p>I'm always interested in hearing about new projects,
       so if you'd like to chat please get in touch</p>
       <form action="https://formspree.io/f/xjvzpjgq" method="post" id="contact-form">
-        <label>Full Name</label>
-        <input type="text" name="fullname" placeholder="Full Name" maxlength="30" required>
-        <label>Email Address</label>
-        <input type="email" name="email" placeholder="Email address" required>
-        <label>Message</label>
-        <textarea id="message" maxlength="500" placeholder="Enter text here" required></textarea>
+        <label for="name">Full Name</label>
+        <input type="text" name="fullname" id="name" placeholder="Full Name" maxlength="30" required>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Email address" required>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
         <button type="submit" name="submit">Get in touch</button>
       </form>
     </div>
