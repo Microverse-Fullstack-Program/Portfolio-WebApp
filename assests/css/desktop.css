@@ -14,8 +14,15 @@
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 20px;
-    animation: logo-loader 10s normal;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
   }
+
+  .logo {
+    animation: logo-loader 10s normal;
+  } 
   
   @keyframes logo-loader {
     0% {
