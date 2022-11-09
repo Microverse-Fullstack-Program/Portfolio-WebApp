@@ -8,7 +8,6 @@ Portfolio is the easiest way of showing what we're truly capable of as a develop
 
 - HTML5
 - CSS: Flex, Grid and Media Query
-- 
 
 ## Live Demo 
 - [My portfolio](https://microverse-fullstack-program.github.io/Portfolio/) 
