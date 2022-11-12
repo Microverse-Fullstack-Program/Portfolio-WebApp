@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="navbar fixed-top navbar-expand-sm navbar-dark bg-secondary border border-3 border-secondary ">
-        <nav class="container-fluid fs-4">
+        <nav class="container-fluid fs-4" id="top-nav">
           <a class="navbar-brand mx-5 text-light fs-3" href="#">Chere Lemma</a>
           <img class="img-thumbnail bg-secondary d-md-none border border-0" src="assests/images/normal_button.png" alt="Normal Button">
           <ul class="navbar-nav my-3 me-5">
@@ -34,7 +34,7 @@
         </nav>
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid scrollspy-example" data-bs-spy="scroll" data-bs-target="#top-nav" data-bs-offset="0" tabindex="0" style="height:max-content;">
       <div class="row d-flex flex-row align-items-center text-light" 
            style="height: 653px; background-image: url(assests/images/about-bkgr-desktop.png); background-size: cover; background-repeat: no-repeat;">
         <div class="col-md-1 mx-1">
