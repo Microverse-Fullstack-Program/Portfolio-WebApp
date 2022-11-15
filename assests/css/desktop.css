@@ -26,37 +26,50 @@
     }
   }
 
+  .topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 358px !important;
+    padding: 5px;
+    position: relative;
+    right: 63px;
+  }
+  
   /* hidde amber */
-  .navigation {
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-top-nav {
     display: none;
   }
 
   /* top navigation styling */
-  .top-nav {
+  .top-nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 368px;
+    width: 298px;
     position: relative;
-    right: 114px;
     list-style: none;
   }
 
-  .top-nav a {
+  .navlinks {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     color: #fff;
     text-decoration: none;
   }
 
-  .top-nav img {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
+  .contact-icon {
+    display: flex;
+    margin-left: 5px;
+    justify-content: flex-end;
   }
 
   /* main container */
