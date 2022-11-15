@@ -44,7 +44,7 @@
   right: 13px;
 }
 
-.hamburger{
+.hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +95,7 @@
   overflow: hidden;
 }
 
-.mobile-top-nav{
+.mobile-top-nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,7 +108,7 @@
   padding: 60px 42px;
   background: #3c3a39;
   list-style: none;
-  transition: all 0.5s ease-in-out;;
+  transition: all 0.5s ease-in-out;
 }
 
 .mobile-top-nav a {
@@ -129,7 +129,6 @@
 .contact-icon {
   display: none;
 }
-
 
 /* Headline Styling */
 .head-container {
