@@ -66,7 +66,8 @@
 }
 
 .hamburger.active {
-  background: rgba(76, 83, 151, 0.7);
+  background: rgba(18, 18, 19, 0.7);
+  cursor: pointer;
 }
 
 .hamburger.active .hamberLine:nth-child(2) {
@@ -74,57 +75,58 @@
 }
 
 .hamburger.active .hamberLine:nth-child(1) {
-  transform: translateY(3px) rotate(45deg);
+  transform: translateY(2px) rotate(45deg);
+  background: #65707e;
+  position: fixed;
+  z-index: 1;
 }
 
 .hamburger.active .hamberLine:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(2px) rotate(-45deg);
+  background: #65707e;
+  position: fixed;
+  z-index: 1;
 }
 
 /* responsive top-nav on mobile */
-.mobile-top-nav {
-  display: none;
+.top-nav-menu {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.mobile-top-nav{
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 15px;
-  top: 0px;
+  gap: 20px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   position: fixed;
-  padding: 65px 20px 20px 15px;
-  backdrop-filter: blur(10px);
-  background: rgba(76, 83, 151, 0.7);
+  padding: 60px 42px;
+  background: #3c3a39;
   list-style: none;
+  transition: all 0.5s ease-in-out;;
 }
 
-.flex-display {
-  display: flex;
-}
-
-.navlinks-mobile {
-  font-size: 18px;
-  font-weight: 500;
-  color: #eff1f5;
-  line-height: 20px;
-  padding: 10px 12px;
+.mobile-top-nav a {
+  width: 100%;
+  display: block;
+  padding-left: 15px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.cross-Icon {
-  top: 20px;
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  text-align: center;
-  right: 20px;
-  padding: 5px;
-  cursor: pointer;
 }
 
 /* hide the menu list and contact icon */
-.top-nav-menu, .contact-icon {
+.contact-icon {
   display: none;
 }
 

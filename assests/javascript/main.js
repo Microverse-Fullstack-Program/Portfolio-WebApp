@@ -1,15 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
-const topMobileMenu = document.querySelector('.mobile-top-nav');
-const crossIcon = document.querySelector('.cross-Icon');
-const NavLinks = document.querySelectorAll('.navlinks-mobile');
+const topMenu = document.querySelector('.top-nav-menu');
+const NavLinks = document.querySelectorAll('.navlinks');
 
 
-function toggleNav() {
-    topMobileMenu.classList.toggle('flex-display');
-}
-
-hamburger.addEventListener('click', toggleNav);
-crossIcon.addEventListener('click', toggleNav);
-
-
-
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    topMenu.classList.toggle('mobile-top-nav');
+  });
+  
+  NavLinks.forEach((linkItem) => {
+    linkItem.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      topMenu.classList.remove('mobile-top-nav');
+    });
+  });
+  

@@ -41,10 +41,6 @@
     display: none;
   }
 
-  .mobile-top-nav {
-    display: none;
-  }
-
   /* top navigation styling */
   .top-nav-menu {
     display: flex;
@@ -52,6 +48,8 @@
     justify-content: space-around;
     align-items: center;
     width: 298px;
+    height: auto;
+    padding: 5px 5px;
     position: relative;
     list-style: none;
   }
@@ -59,17 +57,20 @@
   .navlinks {
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
     color: #fff;
     text-decoration: none;
+    border-bottom: none !important;
   }
 
   .contact-icon {
     display: flex;
     margin-left: 5px;
     justify-content: flex-end;
+    height: auto;
+    padding: 8px 5px;
   }
 
   /* main container */
