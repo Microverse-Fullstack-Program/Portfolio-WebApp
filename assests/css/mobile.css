@@ -589,6 +589,14 @@ button:disabled {
   background: #fbf8f7;
 }
 
+.errorMessage {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 24px;
+  color: #dc3545;
+  margin: 0.75rem 0;
+}
+
 button[type="submit"] {
   display: flex;
   flex-direction: row;
