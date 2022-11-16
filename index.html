@@ -14,14 +14,19 @@
   <body>
     <header class="nav-bar">
         <a class="logo" href="#">Chere Lemma</a>
-        <nav>
-          <img class="navigation" src="assests/images/normal_button.png" alt="Normal Button">
-          <ul class="top-nav">
-            <li><a href="#recent-works" target="_self">Portoflio</a></li>
-            <li><a href="#about-me" target="_self">About</a></li>
-            <li><a href="#contact-me" target="_self">Contact</a></li>
-            <li><a href="#contact-form" target="_self"><img src="assests/images/icon_mail.png" alt="mail icon"></a></li>
-          </ul>        
+        <nav class="topNav">    
+          <ul class="top-nav-menu">
+            <li><a class="navlinks" href="#recent-works" target="_self">Portoflio</a></li>
+            <li><a class="navlinks" href="#about-me" target="_self">About</a></li>
+            <li><a class="navlinks" href="#contact-me" target="_self">Contact</a></li>
+          </ul> 
+          <a class="contact-icon" href="#contact-form" target="_self"><img src="assests/images/icon_mail.png" alt="mail icon"></a>
+
+          <div class="hamburger">
+            <span class="hamberLine"></span>
+            <span class="hamberLine"></span>
+            <span class="hamberLine"></span>
+          </div>
         </nav>
     </header>
 
@@ -315,7 +320,7 @@
   </main>
 
   <footer> 
-    <div class="contact" id="contact-me">
+    <section class="contact" id="contact-me">
       <p>I'm always interested in hearing about new projects,
       so if you'd like to chat please get in touch</p>
       <form action="https://formspree.io/f/xjvzpjgq" method="post" id="contact-form">
@@ -323,11 +328,12 @@
         <input type="text" name="fullname" id="name" placeholder="Full Name" maxlength="30" required>
         <label for="email">Email Address</label>
         <input type="email" name="email" id="email" placeholder="Email address" required>
+        <small></small>
         <label for="message">Message</label>
         <textarea name="message" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
-        <button type="submit" name="submit">Get in touch</button>
+        <button id="getInTouch" type="submit" name="submit" onclick="emailValidation()">Get in touch</button>
       </form>
-    </div>
+    </section>
     <div class="bottom_nav">
       <img id="breakline" src="assests/images/breakline.png" alt="Home Indicator/Light">
       <ul>
@@ -337,8 +343,13 @@
         <li><a href="https://twitter.com/Chere21271613"><img src="assests/images/frame4.png" alt="Twitter Icon"></a></li>
         <li><a href="#"><img src="assests/images/frame5.png" alt="Medium Icon"></a></li>
       </ul>
+      <lab class="xx"></lab>
       <img id="indicator" src="assests/images/shape.png" alt="Home Indicator/Light">
     </div>
   </footer>
+
+  <!-- link to external javascript-->
+  <script src="assests/javascript/main.js"></script>
+
   </body>
 </html>
