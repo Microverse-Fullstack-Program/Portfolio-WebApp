@@ -1,4 +1,3 @@
-
 /* GLOBAL STYLES */
 * {
   margin: 0;
@@ -44,6 +43,42 @@ img.navigation {
 
 .top-nav {
   display: none;
+}
+
+.top-nav-menu {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.mobile-top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 60px 42px;
+  background: #3c3a39;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-top-nav a {
+  width: 100%;
+  display: block;
+  padding-left: 15px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
+  text-decoration: none;
 }
 
 /* Headline Styling */
