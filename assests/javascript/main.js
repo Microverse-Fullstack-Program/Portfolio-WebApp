@@ -33,6 +33,46 @@ contactForm.addEventListener("submit", (event)=>{
   }
 });
 
+
+/* Select input elements to capture data */
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+// Retrive data in localStorage
+function loadLocalStorage() {
+  const contactData = JSON.parse(window.localStorage.getItem('contactData'));
+  if (contactData) {
+    nameInput.value = contactData.name;
+    emailInput.value = contactData.email;
+    messageInput.value = contactData.message;
+  }
+}
+
+// Save in the local storage onchnage of the windowa */
+function onFormChange(e) {
+  let contactData = JSON.parse(window.localStorage.getItem('contactData'));
+
+  if (!contactData) {
+    contactData = {};
+  }
+ 
+  const key = e.target.name;
+  contactData[key] = e.target.value;
+  contactData = JSON.stringify(contactData);
+  window.localStorage.setItem('contactData', contactData);
+}
+
+nameInput.addEventListener('change', onFormChange);
+emailInput.addEventListener('change', onFormChange);
+messageInput.addEventListener('change', onFormChange);
+
+// Load data in DOM on windows load 
+window.onload = () => {
+  loadLocalStorage();
+};
+
+
 /* Highlight top nav menus up on page scroll */
 const sections = document.querySelectorAll("section[id]");
 
