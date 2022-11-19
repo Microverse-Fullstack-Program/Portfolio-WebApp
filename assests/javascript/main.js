@@ -93,17 +93,16 @@ window.addEventListener("scroll", function () {
 });
 
 // Work history details to be display dynamically
-const featureWorkData = [
+const featuredWorkRecord = [
   {
-    image: 'assests/images/img_placeholder.png',
-    imageAlt: 'my project image placeholder',
+    mobileImg: 'assests/images/mob-featuredwork-placeholder.png',
+    desktopImg: 'assests/images/desk-featuredwork-placeholder.png',
     title: 'Multi-Post Stories',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's 
     standard dummy text ever since the 1500s, when an unknown 
     printer took a standard dummy text.`,
-    languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
+    tags: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
   },
 ];
 
@@ -111,12 +110,11 @@ const firstCard = [
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder2.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Professional Art Printing Data',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'professional art printing data',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
   },
 ];
 
@@ -124,132 +122,145 @@ const projectCards = [
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder4.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Data Dashboard Healthcare',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'data dashboard healthcare',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project'],
   },
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder3.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Website Portfolio',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'website portfolio',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
   },
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder5.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Professional Art Printing Data More',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'professional art printing data more',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
   },
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder4.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Data Dashboard Healthcare',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'data dashboard healthcare',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
   },
   {
     mobileImg: 'assests/images/mask_group.png',
     desktopImg: 'assests/images/img_placeholder3.png',
-    mobileTitle: 'Professional Art Printing Data',
-    deskTitle: 'Website Portfolio',
+    mobileTitle: 'professional art printing data',
+    deskTitle: 'website portfolio',
     desc: `A daily selection of privately personalized reads; 
     no accounts or sign-ups required. has been the industry's standard`,
     tags: ['HTML', 'Bootstrap', 'Ruby'],
-    button: ['See Project']
   },
 ];
 
-
 const featuredWork = document.querySelector('.featured-work');
-const cardsContainer = document.querySelector('.work-frame');
+const gridContainer = document.querySelector('.grid-container');
 
-// Load recent works featured-work section
+// Load featured-work
 const printFeaturedWork = (array) => {
-  const featureWorkData = array.map((cardContent) => 
-    `<img  src=${cardContent.image} alt=${cardContent.imageAlt}>
+  const featuredWorkString = array.map((cardsData) => 
+  `<div class="mob-img"><img  src=${cardsData.mobileImg} alt="Work card image"></div>
+    <div class="desk-img"><img  src=${cardsData.desktopImg} alt="Work card image"></div>
     <div class="right-block">
-      <h2> ${cardContent.title} </h2>
-      <p> ${cardContent.desc} </p>
-    
-      <div class="tags">
-        <ul>
-          ${cardContent.languages.map((lang) => `<li>${lang}</li>`).join('')}
-        </ul>
-      </div>
-      <button class="see-project" type="button">${cardContent.button}</button>    
-    </div>
-    `).join('');
-    
-  featuredWork.innerHTML = featureWorkData;
-};
-
-const printFirstCard = (array) => {
-  const firstCardData = array.map((card) => 
-    `<div class="work-cards">
-        <img class="mobile-img" src=${card.mobileImg} alt="Work card image">
-        <img class="desktop-img" src=${card.desktopImg} alt="Work card image">
-      </div>
-      <div class="card-content">
-        <h2 class="firstCard"> ${card.mobileTitle} </h2>
-        <p class="firstCard"> ${card.desc} </p>
-                
-        <div class="tags firstCard">
-          <ul>
-            ${card.tags.map((tag) => `<li>${tag}</li>`).join('')}
-          </ul>
-        </div>
-        <button type="button">${card.button}</button>
-      </div>
-    </div>`).join('');
-    
-    cardsContainer.innerHTML = firstCardData;
-};
-
-// Load recent works cards
-const printCards = (array) => {
-  const cardData = array.map((card) => 
-    `<div class="work-cards">
-      <img class="mobile-img" src=${card.mobileImg} alt="Work card image">
-      <img class="desktop-img" src=${card.desktopImg} alt="Work card image">
-      <div class="card-content">
-        <h2 class="mob-title"> ${card.mobileTitle} </h2>
-        <h2 class="desk-title"> ${card.deskTitle} </h2>
-        <p class="mobile-desc desktop-desc"> ${card.desc} </p>
+        <h2 class="workTitle">${cardsData.title}</h2>
+        <p class="workDesc">${cardsData.desc}</p>
         
-        <div class="tags">
-          <ul>
-            ${card.tags.map((tag) => `<li>${tag}</li>`).join('')}
-          </ul>
+        <ul class="tags">
+            ${cardsData.tags.map((lang) => `<li class="lang">${lang}</li>`).join('')}
+        </ul>
+        
+        <div class="workBtn-center">
+            <button class="workBtn see-project button" >
+                see project
+            </button>
         </div>
-      </div>
-      <button class="cardButton see-project" type="button" button>${card.button}</button>
-    </div>`).join('');
-    
-    cardsContainer.innerHTML = cardData;
+    </div>`)
+    .join('');
+  featuredWork.innerHTML = featuredWorkString;
 };
 
-/* Load worksection dynamically on page load */
-window.addEventListener('DOMContentLoaded', () => {
-  printFeaturedWork(featureWorkData);
-  printFirstCard(firstCard);
-  printCards(projectCards);
-  modalPopup();
-});
+// Load first card
+const printCardOne = (array) => {
+  const cardOneData = array.map((cardsData) => `<div class="grid-item">
+    <div class="card-img">
+        <img class="mob-img" src=${cardsData.mobileImg} alt="Work card image">
+        <img class="desk-img" src=${cardsData.desktopImg} alt="Work card image">
+    </div>
+    <div class="card-content">
+        <div class="card-text hide-text">
+            <div class="card-title">
+                <p class="mobile-para">${cardsData.mobileTitle}</p>
+                <p class="desktop-para">${cardsData.deskTitle}</p>
+            </div>
+            <div class="card-desc">
+                <p>
+                    ${cardsData.desc}
+                </p>
+            </div>
+            <div>
+                <ul class="tags">
+                    ${cardsData.tags.map((tag) => `<li class="lang">${tag}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button class="card-btn see-project button" >
+                see project
+            </button>
+        </div>
+    </div>
+</div>`)
+    .join('');
+  gridContainer.innerHTML = cardOneData;
+};
 
+// Load the rest of the cards
+const printWProjectCard = (array) => {
+  const projectsCardData = array.map((cardsData) => `<div class="grid-item">
+    <div class="card-img">
+        <img class="mob-img" src=${cardsData.mobileImg} alt="Work card image">
+        <img class="desk-img" src=${cardsData.desktopImg} alt="Work card image">
+    </div>
+    <div class="card-content">
+        <div class="card-text">
+            <div class="card-title">
+                <p class="mobile-para">${cardsData.mobileTitle}</p>
+                <p class="desktop-para">${cardsData.deskTitle}</p>
+            </div>
+            <div class="card-desc">
+                <p>
+                    ${cardsData.desc}
+                </p>
+            </div>
+            <div>
+                <ul class="tags">
+                ${cardsData.tags.map((tag) => `<li class="lang">${tag}</li>`).join('')} 
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button class="card-btn see-project button hide-btn" >
+                see project
+            </button>
+        </div>
+    </div>
+</div>`)
+    .join('');
+  gridContainer.innerHTML += projectsCardData;
+};
 
 // Popup window
 const modalPopup = () => {
@@ -276,3 +287,10 @@ const modalPopup = () => {
     });
   });
 };
+
+window.addEventListener('DOMContentLoaded', () => {
+  printFeaturedWork(featuredWorkRecord);
+  printCardOne(firstCard);
+  printWProjectCard(projectCards);
+  modalPopup();
+});
