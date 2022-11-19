@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chere's portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Crete Round'>
     <link rel="stylesheet" href="assests/css/mobile.css">
     <link rel="stylesheet" href="assests/css/desktop.css">
   </head>
   <body>
-     <header class="nav-bar">
+    <div class="wrapper">
+      <header class="header">
         <a class="logo" href="#">Chere Lemma</a>
-        <nav class="topNav">    
+
+        <nav> 
+          <div class="hamburger">
+            <span class="hambergerBar"></span>
+            <span class="hambergerBar"></span>
+            <span class="hambergerBar"></span>
+          </div>
+
           <ul class="top-nav-menu">
             <li><a class="navlinks" href="#recent-works" target="_self">Portoflio</a></li>
             <li><a class="navlinks" href="#about-me" target="_self">About</a></li>
             <li><a class="navlinks" href="#contact-me" target="_self">Contact</a></li>
+            <li><a class="navlinks" href="#contact-form" target="_self"><img src="assests/images/icon_mail.png" alt="mail icon"></a></li>
           </ul> 
-          <a class="contact-icon" href="#contact-form" target="_self"><img src="assests/images/icon_mail.png" alt="mail icon"></a>
-
-          <div class="hamburger">
-            <span class="hamberLine"></span>
-            <span class="hamberLine"></span>
-            <span class="hamberLine"></span>
-          </div>
         </nav>
-     </header>
+      </header>
 
-    <main>
       <section class="headline">
         <div class="headline-content">
           <h1 class="primary-text"> Hey There. <br> I&rsquo;m Chere</h1>
@@ -38,6 +35,7 @@
           <p class="description">I can help you build a product, feature or website Look through some of my work and experience! 
             If you like what you see and have a project you need coded, <br> don’t hestiate to contact me.</p>
         </div>
+
         <div class="social-media">
           <ul class="social-icon">
             <li><a href="https://github.com/cherelemma/"><img src="assests/images/github.png" alt="Github Icon"></a></li>
@@ -48,11 +46,12 @@
           </ul>
         </div>
       </section>
+    </div>
 
-      <section class="recent-works" id="recent-works">
+      <section class="container works" id="recent-works">
         <div class="works-title">
-          <h2>My Recent Works</h2>
-          <hr>
+          <h2 class="work-heading">My Recent Works</h2>
+          <div class="hr-div"><hr class="work-hr"></div>          
         </div>
 
         <!-- featured work card  --> 
@@ -60,7 +59,7 @@
         </div>
 
         <!-- Work cards -->
-        <div class="work-frame">
+        <div class="grid-container">
         </div>
       </section>
   
@@ -193,24 +192,23 @@
               ever since the 1500s, when an unknown printer took a galley of type 
               and scrambled it 1960s with the releaLorem
             </p>
+            <div class="modal-btns">
+              <button>
+                  <a class="modal-btn" href="">See Live</a>
+                  <img class="modal-btn-img" src="assests/images/live-icon.png" alt="See Live Image">
+              </button>
+              <button>
+                  <a class="modal-btn" href="">See Source</a>
+                  <img class="modal-btn-img" src="assests/images/github-icon.png" alt="See Source Github Image">
+              </button>
+            </div>
           </div>
 
-          <div class="modal-btns">
-            <button>
-                <a class="modal-btn" href="">See Live</a>
-                <img class="modal-btn-img" src="assests/images/live-icon.png" alt="See Live Image">
-            </button>
-            <button>
-                <a class="modal-btn" href="">See Source</a>
-                <img class="modal-btn-img" src="assests/images/github-icon.png" alt="See Source Github Image">
-            </button>
-          </div>
+   
 
         </div>
     </div>
-  </div>
-
-      
+  </div>      
 
   <!-- link to external javascript-->
   <script src="assests/javascript/main.js"></script>
