@@ -108,12 +108,10 @@ body {
   z-index: 1;
 }
 
-
 /* hide the menu list and contact icon */
 .contact-icon {
   display: none;
 }
-
 
 /* Headline Section */
 .headline {
@@ -169,7 +167,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding: 10px;
   align-items: center;
   padding: 0 24px;
 }
@@ -287,7 +284,7 @@ body {
 .lang li {
   padding: 10px 5px;
   border: 1px solid #0b0c0e;
-  color: #e7e9ec;;
+  color: #e7e9ec;
 }
 
 .right-block li {

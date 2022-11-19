@@ -8,7 +8,7 @@
   .header a {
     color: #fff;
   }
-  
+
   /* hidde amber */
   .hamburger {
     display: none;
@@ -136,7 +136,7 @@
     gap: 12px;
     margin-bottom: 24px;
   }
-  
+
   .workTitle {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -146,7 +146,7 @@
     color: #091e42;
     padding: 0 24px;
   }
-  
+
   .workDesc {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -156,7 +156,7 @@
     color: #091e42;
     padding: 0 24px;
   }
-  
+
   .tags {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -168,7 +168,7 @@
     gap: 12px;
     color: #f3f3f3;
   }
-  
+
   .workBtn {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -184,7 +184,7 @@
     border: none;
     text-transform: capitalize;
   }
-  
+
   .workBtn-center {
     width: max-content;
     text-align: left;
@@ -242,7 +242,6 @@
   .works .hide-btn {
     display: none;
   }
-
 
   /* About Us section */
   .about-us {
@@ -404,6 +403,14 @@
     width: auto;
   }
 
+  .modal button {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: rgb(255, 190, 12);
+    border: none;
+  }
+
   .contact button:hover {
     color: blue;
     -webkit-transition: color 5s ease-out;
@@ -556,13 +563,5 @@
     display: flex;
     justify-content: start;
     gap: 7px;
-  }
-
-  .modal button {
-    display: flex;
-    gap: 12px;
-    padding: 12px;
-    background: #1100ff;
-    border: none;
   }
 }
