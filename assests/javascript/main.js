@@ -29,7 +29,6 @@ contactForm.addEventListener("submit", (event)=>{
   }
   else {
     errorMsg.classList.remove('errorMessage');
-    contactForm.submit()
   }
 });
 
@@ -92,3 +91,188 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+// Work history details to be display dynamically
+const featureWorkData = [
+  {
+    image: 'assests/images/img_placeholder.png',
+    imageAlt: 'my project image placeholder',
+    title: 'Multi-Post Stories',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's 
+    standard dummy text ever since the 1500s, when an unknown 
+    printer took a standard dummy text.`,
+    languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+];
+
+const firstCard = [
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder2.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Professional Art Printing Data',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+];
+
+const projectCards = [
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder4.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Data Dashboard Healthcare',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project'],
+  },
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder3.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Website Portfolio',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder5.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Professional Art Printing Data More',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder4.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Data Dashboard Healthcare',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+  {
+    mobileImg: 'assests/images/mask_group.png',
+    desktopImg: 'assests/images/img_placeholder3.png',
+    mobileTitle: 'Professional Art Printing Data',
+    deskTitle: 'Website Portfolio',
+    desc: `A daily selection of privately personalized reads; 
+    no accounts or sign-ups required. has been the industry's standard`,
+    tags: ['HTML', 'Bootstrap', 'Ruby'],
+    button: ['See Project']
+  },
+];
+
+
+const featuredWork = document.querySelector('.featured-work');
+const cardsContainer = document.querySelector('.work-frame');
+
+// Load recent works featured-work section
+const printFeaturedWork = (array) => {
+  const featureWorkData = array.map((cardContent) => 
+    `<img  src=${cardContent.image} alt=${cardContent.imageAlt}>
+    <div class="right-block">
+      <h2> ${cardContent.title} </h2>
+      <p> ${cardContent.desc} </p>
+    
+      <div class="tags">
+        <ul>
+          ${cardContent.languages.map((lang) => `<li>${lang}</li>`).join('')}
+        </ul>
+      </div>
+      <button class="see-project" type="button">${cardContent.button}</button>    
+    </div>
+    `).join('');
+    
+  featuredWork.innerHTML = featureWorkData;
+};
+
+const printFirstCard = (array) => {
+  const firstCardData = array.map((card) => 
+    `<div class="work-cards">
+        <img class="mobile-img" src=${card.mobileImg} alt="Work card image">
+        <img class="desktop-img" src=${card.desktopImg} alt="Work card image">
+      </div>
+      <div class="card-content">
+        <h2 class="firstCard"> ${card.mobileTitle} </h2>
+        <p class="firstCard"> ${card.desc} </p>
+                
+        <div class="tags firstCard">
+          <ul>
+            ${card.tags.map((tag) => `<li>${tag}</li>`).join('')}
+          </ul>
+        </div>
+        <button type="button">${card.button}</button>
+      </div>
+    </div>`).join('');
+    
+    cardsContainer.innerHTML = firstCardData;
+};
+
+// Load recent works cards
+const printCards = (array) => {
+  const cardData = array.map((card) => 
+    `<div class="work-cards">
+      <img class="mobile-img" src=${card.mobileImg} alt="Work card image">
+      <img class="desktop-img" src=${card.desktopImg} alt="Work card image">
+      <div class="card-content">
+        <h2 class="mob-title"> ${card.mobileTitle} </h2>
+        <h2 class="desk-title"> ${card.deskTitle} </h2>
+        <p class="mobile-desc desktop-desc"> ${card.desc} </p>
+        
+        <div class="tags">
+          <ul>
+            ${card.tags.map((tag) => `<li>${tag}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+      <button class="cardButton see-project" type="button" button>${card.button}</button>
+    </div>`).join('');
+    
+    cardsContainer.innerHTML = cardData;
+};
+
+/* Load worksection dynamically on page load */
+window.addEventListener('DOMContentLoaded', () => {
+  printFeaturedWork(featureWorkData);
+  printFirstCard(firstCard);
+  printCards(projectCards);
+  modalPopup();
+});
+
+
+// Popup window
+const modalPopup = () => {
+  const projectBtns = document.querySelectorAll('.see-project');
+  const containers = document.querySelectorAll('.container');
+  const myModal = document.querySelector('.modal-overlay');
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Show modal
+  projectBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      myModal.classList.add('display-modal');
+      containers.forEach((container) => {
+        container.classList.add('blur');
+      });
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener('click', () => {
+    myModal.classList.remove('display-modal');
+    containers.forEach((container) => {
+      container.classList.remove('blur');
+    });
+  });
+};

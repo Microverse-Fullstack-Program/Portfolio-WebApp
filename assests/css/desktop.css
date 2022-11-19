@@ -2,14 +2,16 @@
   /* Status bar and navigation bar style */
   .nav-bar {
     width: 100%;
+    height: 112px;
   }
 
   /* logo pic / loge name styling */
   .logo {
+    width: 280px;
     margin-left: 45px;
     font-family: Inter, sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 36px;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -29,11 +31,12 @@
   .topNav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between !important;
-    width: 358px !important;
+    justify-content: center !important;
+    column-gap: 32px;
+    width: 668px !important;
     padding: 5px;
     position: relative;
-    right: 63px;
+    right: 93px !important;
   }
 
   /* hidde amber */
@@ -47,7 +50,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 298px;
+    width: 398px;
     height: auto;
     padding: 5px 5px;
     position: relative;
@@ -58,8 +61,8 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 600 !important;
-    font-size: 18px !important;
-    line-height: 20px !important;
+    font-size: 26px !important;
+    line-height: 24px !important;
     color: #fff;
     text-decoration: none;
     border-bottom: none !important;
@@ -68,9 +71,7 @@
   .contact-icon {
     display: flex;
     margin-left: 5px;
-    justify-content: flex-end;
-    height: auto;
-    padding: 8px 5px;
+    height: 50px;
   }
 
   .highlight {
@@ -85,60 +86,52 @@
   }
 
   /* Headline Section Styling */
-  .head-container {
+  .headline {
     width: 100%;
-    height: 849px;
-    position: absolute;
-    top: 72px;
-    left: 0;
+    position: relative;
+    padding-top: 112px;
     background-image: url(../images/about-bkgr-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
   }
 
-  .headline {
+  .headline-content {
     display: flex;
     flex-direction: column;
-    width: 613px;
-    height: 780px;
+    gap: 24px;
+    width: 65%;
     margin: 0;
     position: relative;
-    left: 103px;
+    left: 123px;
     top: 0;
   }
 
   .primary-text {
-    width: 466px !important;
-    height: 186px !important;
     font-style: normal;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400 !important;
-    font-size: 72px !important;
-    line-height: 82px !important;
+    font-size: 82px !important;
+    line-height: 112px !important;
     color: #ff6b00;
     padding: 10px;
   }
 
   .support-text {
-    width: 566px !important;
-    height: max-content;
     padding: 10px;
-    font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 48px;
+    line-height: 66px;
   }
 
   .description {
-    width: 566px !important;
-    height: max-content;
     padding: 10px;
-    font-style: normal;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 62px;
   }
 
   h1.primary-text,
@@ -155,55 +148,54 @@
   /* Social Media */
   .social-media {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 87px;
-    height: 456px;
     position: absolute;
     left: 0%;
-    top: 117px;
+    top: 325px !important;
   }
 
   .social-icon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 10px;
   }
 
   .social-media img {
     padding: 8px;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     border-radius: 8px;
   }
 
   /* Recent works section */
   .recent-works {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 0.5fr 2.5fr 6fr;
+    padding-top: 145px;
     width: 100%;
-    height: 1590px;
+    height: fit-content;
     position: relative;
-    top: 1132px;
+    top: 131px;
   }
 
   /* Title */
   .works-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-row-start: 1;
     gap: 24px;
     width: 100%;
     height: 52px;
+    position: relative;
+    left: 157px;
   }
 
   .works-title hr {
-    width: 594px;
-    height: 0;
-    border: 1px solid #212121;
+    width: 75%;
+    border: 1px solid #212121; 
   }
 
   .works-title h2 {
@@ -216,6 +208,20 @@
     color: #1c1a19;
   }
 
+  /* Featured work section */
+  .featured-work {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-content: space-between;
+  }
+
+  .featured-work img {
+    height: 80%;
+    width: 75%;
+    margin: 0 auto;
+  }
+
   .works-title img {
     width: 327px;
     display: inline-flex;
@@ -226,16 +232,16 @@
 
   button {
     display: flex;
-    width: 173px;
     height: 48px;
     gap: 10px;
     background: #ff6b00;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 32px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    text-align: center;
     color: #fff;
     border: none;
   }
@@ -253,40 +259,22 @@
     background: #f4f1f0;
   }
 
-  /* Multi stories and featured image section */
-  .multi-stories {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0 24px;
-    gap: 24px;
-    width: 100%;
-    height: 448px;
-    position: relative;
-    top: 114px;
-    margin: auto;
-  }
-
-  .multi-stories img {
-    height: 448px;
-    width: 80%;
-    margin: auto;
-  }
-
   .right-block {
-    display: grid;
-    grid-template-rows: 1fr 2.5fr 1fr 1fr;
-    gap: 10px;
-    width: fit-content;
-    height: 318px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 64px;
+    width: 100%;
+    height: max-content;
     justify-content: left;
   }
 
   .right-block h2 {
-    font-family: Crete Round, sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 40px !important;
+    line-height: 52px !important;
     color: #091e42;
   }
 
@@ -294,16 +282,16 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
-    line-height: 28px;
-    height: 140px;
-    width: 432px;
+    font-size: 32px;
+    line-height: 48px;
+    width: 765px;
   }
 
   .tags ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 20px;
     width: 100%;
   }
 
@@ -313,107 +301,63 @@
     justify-content: center;
     align-items: center;
     padding: 10px 12px;
-    width: 90px;
-    height: 40px;
+    width: 140px;
+    height: 60px;
     background: rgba(255, 255, 255, 0.24);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 32px;
     line-height: 20px;
     border: 1px solid #8993a4;
   }
 
   .right-block button {
-    width: 139px;
+    width: auto;
     text-align: center;
   }
 
   /* style for work cards section */
   .work-frame {
-    display: flex;
-    flex-flow: row wrap;
-    top: 115px;
-    gap: 1px;
-    width: 100%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 659px);
+    grid-auto-rows: 776px;
+    row-gap: 37px;
+    column-gap: 24px;
+    margin: 0 auto;
+    top: 132px;
+    position: relative;
   }
 
   .work-cards {
-    display: none;
-  }
-
-  .work-cards-desk {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
     position: relative;
-    width: 369px;
-    height: 435px;
+    overflow: auto;
+    width: 100%;
+    border: aqua 1px solid;
   }
-
-  .img-placeholder2 {
-    border: #1c1a19 1px solid;
-    background-image: url(../images/img_placeholder2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .img-placeholder3 {
-    background-image: url(../images/img_placeholder3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .img-placeholder4 {
-    background-image: url(../images/img_placeholder4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .img-placeholder5 {
-    background-image: url(../images/img_placeholder5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .work-cards-desk h2,
-  .work-cards-desk p {
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-    color: #fff;
-    font-size: 32px;
-    line-height: 44px;
-    padding-left: 10px;
-  }
-
-  .work-cards-desk h2 {
+  
+  .card-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 193px;
-    width: 337px;
-    position: relative;
-    margin-top: 80px;
+    row-gap: 45px;
+    position: absolute;
+    padding-top: 10px !important;
+    left: 10px;
+    padding-bottom: 45px;
+    height: 100%;
+    width: 95%;
   }
 
-  .work-cards-desk p {
-    display: flex;
-    align-items: center;
-    width: 337px;
-    height: 103px;
-    margin: 0;
-    position: relative;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Inter, serif;
-    color: #fff;
-  }
-
-  .work-cards-desk li {
-    background-color: rgba(255, 255, 255, 0.24);
-    color: #fff;
-    margin-bottom: 20px;
+  .desktop-img {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
   }
 
   #button-width {
@@ -436,15 +380,13 @@
 
   /* About Us section */
   .about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 120px 24px;
-    gap: 24px;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 1fr;
     position: relative;
     width: 100%;
-    height: 593px;
-    top: 1438px;
+    height: max-content;
+    margin-top: 459px;
+    top: 97px !important;
     background-image: url(../images/about_bkgr2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -457,25 +399,27 @@
     left: 10%;
   }
 
-  .about-us p {
-    max-width: 566px;
+  .about-us button {
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    font-size: 32px;
   }
 
-  .about-us > p {
+  .about-us p {
     color: #f4f5f7;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    width: 65%;
+    font-size: 32px;
+    line-height: 62px;
+    width: 45%;
+    height: max-content;
   }
 
   .about-us hr {
     width: 80%;
     border: 0.115px solid rgb(138, 131, 131);
-    position: relative;
-    top: 85px;
     margin: auto;
   }
 
@@ -484,12 +428,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    column-gap: 124px;
+    column-gap: 224px;
     position: relative;
     margin: auto;
     width: 100%;
     height: 652px;
-    top: 1437px;
+    top: 97px !important;
     padding-top: 150px;
     background-color: #221e1e;
   }
@@ -499,35 +443,38 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 700 !important;
+    font-size: 44px;
     height: 64px;
     color: #fff;
   }
 
   .skills-container li {
     display: flex;
+    font-size: 32px;
+    line-height: 64px;
+  }
+
+  footer {
+    height: 721px;
+    margin-bottom: 25px;
   }
 
   .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 615px;
+    width: 80%;
     margin: auto;
-    padding: 120px 24px;
-    gap: 44px;
+    height: auto;
+    gap: 84px;
     position: relative;
-    top: 1469px;
-    left: 10%;
+    top: 195px !important;
     font-family: sans-serif;
     font-style: normal;
   }
 
   .contact p {
     width: 340px;
-    height: 216px;
     padding: 20px 6px;
     font-weight: 700;
     font-size: 32px;
@@ -541,13 +488,12 @@
   }
 
   .contact form {
-    width: 567px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 20px;
-    gap: 24px;
-    height: 330px;
+    gap: 44px;
   }
 
   .contact label {
@@ -561,7 +507,7 @@
     position: relative;
     right: 16px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 26px;
     line-height: 24px;
     border: none;
     border-bottom: 1px solid #dbd8d7;
@@ -574,7 +520,7 @@
     right: 16px;
     left: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 26px;
     line-height: 24px;
     border: none;
     padding: 12px;
@@ -587,7 +533,7 @@
     align-self: flex-start;
     justify-content: center;
     gap: 10px;
-    width: 145px;
+    width: auto;
   }
 
   .contact button:hover {
@@ -608,12 +554,13 @@
     width: 100%;
     height: 92px;
     left: 0;
-    top: 1450px;
+    top: 280px !important;
   }
 
   #breakline {
     position: absolute;
     top: 0;
+    width: 100%;
     height: 1px;
   }
 
@@ -644,8 +591,9 @@
     height: 40px;
   }
 
-  .multi-stories img:hover {
-    transform: scale(1.2);
+  .featured-work img:hover {
+    transform: scale(1.3);
+    z-index: 999;
   }
 
   .bottom_nav img:hover,
@@ -653,4 +601,206 @@
     border: 1px rgb(24, 211, 24) solid;
     transform: scale3d(1.2, 1.2, 1.2);
   }
+}
+
+@media (min-width: 992px){
+  .headline-content {
+    width: 35% !important;
+  }
+
+  .about-us p {
+    width: 35%;
+  }
+}
+
+
+  /* --- Desktop POPUP WINDOW STYLES ----- */
+
+  .modal-container {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    background: #fff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 24px;
+  }
+
+  .modal-content {
+    gap: 40px;
+  }
+
+
+
+  .modal-title {
+    margin-top: 24px;
+  }
+
+  .mobile-heading {
+    display: none;
+  }
+
+  .desktop-heading {
+    display: block;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 27px;
+  }
+
+  .modal-imgM {
+    display: none;
+  }
+
+  .modal-imgD {
+    display: block;
+  }
+
+  .modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 24px;
+    width: 50%;
+  }
+
+  .modal-descM {
+    display: none;
+  }
+
+  .modal-descD {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-btns {
+    display: flex;
+    justify-content: start;
+    gap: 7px;
+  }
+
+  .modal button {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #ff6b00;
+    border: none;
+  }
+
+  /* --- Mobile POPUP WINDOW STYLES ----- */
+  .modal-container {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    background: #fff;
+    width: 90%;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 24px;
+  }
+  
+  .mobile-heading {
+    display: none;
+  }
+
+  .desktop-heading {
+    display: block;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 27px;
+  }
+
+  .modal-mobImage {
+    display: none;
+  }
+
+  .modal-desktopImage {
+    display: block;
+  }
+
+  .modal-text {
+    background-color: #e05304;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 24px;
+    width: 50%;
+  }
+
+  .modal-mobileDesc {
+    display: none;
+  }
+
+  .modal-desktopDesc {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-btns {
+    display: flex;
+    justify-content: start;
+    gap: 7px;
+  }
+
+  .modal button {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #ff6b00;
+    border: none;
+  }
+
+  
 }
