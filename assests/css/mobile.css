@@ -649,17 +649,19 @@ button[type="submit"] {
 
 /* --- Mobile POPUP WINDOW STYLES ----- */
 .modal-overlay {
-  display: none;
+  width: 100%;
+  height: 100%;
   position: fixed;
-  top: 0;
+  z-index: 999;
   left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0;
   background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
-  z-index: 1;
-  height: fit-content;
   overflow: scroll;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(8, 19, 43, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .modal-container {
