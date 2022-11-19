@@ -649,21 +649,17 @@ button[type="submit"] {
 
 /* --- Mobile POPUP WINDOW STYLES ----- */
 .modal-overlay {
-  width: 100%;
-  height: 100%;
+  display: none;
   position: fixed;
-  z-index: 9999;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
+  z-index: 1;
+  height: fit-content;
   overflow: scroll;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
-  background: #12234766;
-  box-shadow: 0 8px 32px 0 #393e8d5e;
-  display: flex;
-  justify-content: center;
 }
 
 .modal-container {
@@ -784,27 +780,26 @@ button[type="submit"] {
 .modal-btns {
   display: flex;
   justify-content: center;
-  column-gap: 10px;
+  column-gap: 25px;
   margin-top: 20px;
 }
 
-button {
+.modal button {
   display: flex;
-  padding: 10px;
-  background: #e66205 !important;
+  padding: 24px;
+  background: #ff6b00;
   border: none;
   text-decoration: none;
 }
 
-.modal-btn {
+.modal .modal-btn {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #f3f3f3;
-  padding: 5px;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -813,3 +808,6 @@ button {
   display: block;
 }
 
+.blur {
+  filter: blur(5px);
+}
