@@ -434,7 +434,6 @@ body {
   color: #5b5957;
 }
 
-
 /* About Us section */
 .about-us {
   display: flex;
@@ -765,7 +764,7 @@ button[type="submit"] {
   margin-top: 24px;
 }
 
-.modal-mobileDesc{
+.modal-mobileDesc {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
