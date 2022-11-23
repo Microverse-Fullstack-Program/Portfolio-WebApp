@@ -253,26 +253,26 @@ button {
 }
 
 button:enabled {
-  background:#f55800;
-  color:#fff;
+  background: #f55800;
+  color: #fff;
 }
 
 button:active {
-  background:#e05304;
-  color:#f4f1f0;
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 button:hover {
-  background:#fff5e1;
+  background: #fff5e1;
   border: 1px solid #f55800;
-  color:#f55800;
+  color: #f55800;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
 
 button:disabled {
-  color:#5b5957;
+  color: #5b5957;
   background:#f4f1f0;
 }
 
@@ -315,7 +315,7 @@ button:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color:#091e42;
+  color: #091e42;
 }
 
 .tags {
@@ -386,7 +386,7 @@ button:disabled {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color:rgb(250, 248, 248);
+  color: rgb(250, 248, 248);
   padding: 5px 20px;
 }
 
