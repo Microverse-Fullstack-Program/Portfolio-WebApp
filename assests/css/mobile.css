@@ -253,8 +253,8 @@ button {
 }
 
 button:enabled {
-  background: #f55800;
-  color: #fff;
+  background:#f55800;
+  color:#fff;
 }
 
 button:active {
