@@ -51,7 +51,7 @@
     text-decoration: underline;
   }
 
-  .navlinks img  {
+  .navlinks img {
     margin-left: 5px;
     height: 30px;
   }
@@ -121,7 +121,7 @@
   .works .work-hr {
     margin: auto 0;
   }
-  
+
   /* Work section */
   .featured-work {
     max-width: 1156px;
@@ -183,11 +183,10 @@
 
   .mobile-img,
   .mobile-para,
-  .hide-text,
   .hide-btn,
   .cardOneTags,
   .hide-text,
-  .cardOneDesc  {
+  .cardOneDesc {
     display: none;
   }
 
@@ -211,7 +210,7 @@
 
   .about-us h2 {
     margin-left: 95px;
-   }
+  }
 
   .about-us p {
     color: #f4f5f7;
@@ -242,7 +241,6 @@
 
 
   /* skills section */
-
   .skills-container {
     display: flex;
     flex-direction: row;
@@ -434,7 +432,7 @@
     margin-bottom: 37px;
     padding-left: 35px;
   }
-  
+
   .modal-title {
     margin-top: 24px;
   }
@@ -455,8 +453,8 @@
   }
 
   .close-btn {
-     padding-right: 20px;
-     padding-top: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
   }
 
   .modal-body {

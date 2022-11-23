@@ -61,7 +61,7 @@ body {
   }
 }
 
-/* responsive top-nav on mobile devices*/
+/* responsive top-nav on mobile devices */
 .top-nav-menu {
   list-style: none;
   height: 0;
@@ -145,7 +145,6 @@ body {
 .message-icon {
   display: none;
 }
-
 
 /* Headline Section */
 .headline {
@@ -241,7 +240,7 @@ body {
 }
 
 /* Buttons' common style */
-button {  
+button {
   padding: 12px;
   gap: 10px;
   font-family: Inter, sans-serif;
@@ -259,8 +258,8 @@ button:enabled {
 }
 
 button:active {
-  background:  #e05304;
-  color: #F4F1F0;
+  background: #e05304;
+  color:#F4F1F0;
 }
 
 button:hover {
@@ -338,7 +337,6 @@ button:disabled {
   padding: 10px;
   border: 1px solid #8993a4
 }
-
 
 /* Work card grid styles */
 .work-grid {
