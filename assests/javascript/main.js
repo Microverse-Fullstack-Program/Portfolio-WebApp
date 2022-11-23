@@ -212,3 +212,20 @@ window.addEventListener('DOMContentLoaded', () => {
   modalPopup();
 });
 
+/* Form validation */
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener("submit", (event)=>{
+  let emailInput = contactForm.elements['email'];
+  let errorMsg =  document.getElementById('errorMsg');
+
+  /* check if the email is all in lower case or not */
+	if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.classList.add('errorMessage');
+    errorMsg.innerText = "Please enter the email address in lowercase!";
+  }
+  else {
+    errorMsg.classList.remove('errorMessage');
+    contactForm.submit()
+  }
+});
