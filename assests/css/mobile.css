@@ -259,7 +259,7 @@ button:enabled {
 
 button:active {
   background: #e05304;
-  color:#F4F1F0;
+  color:#f4f1f0;
 }
 
 button:hover {
@@ -335,7 +335,7 @@ button:disabled {
   margin-top: 2px;
   list-style: none;
   padding: 10px;
-  border: 1px solid #8993a4
+  border: 1px solid #8993a4;
 }
 
 /* Work card grid styles */
@@ -401,7 +401,7 @@ button:disabled {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  padding: 0px 5px 0px 15px;
+  padding: 0 5px 0 15px;
 }
 
 .work-cards .tags {
@@ -453,7 +453,6 @@ button:disabled {
   margin-bottom: 45px;
 }
 
-
 /* Skills section */
 .skills-container {
   display: flex;
@@ -469,7 +468,6 @@ button:disabled {
   display: inline-flex;
   flex-direction: row;
   column-gap: 24px;
-
 }
 
 .skills-title img {
@@ -598,7 +596,6 @@ button[type="submit"] {
   z-index: 9999;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
   overflow: scroll;
   backdrop-filter: blur(7px);
@@ -648,7 +645,7 @@ button[type="submit"] {
   outline: none;
   background: none;
   color: #67798e;
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
