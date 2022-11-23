@@ -263,17 +263,17 @@ button:active {
 }
 
 button:hover {
-  background: #fff5e1;
+  background:#fff5e1;
   border: 1px solid #f55800;
-  color: #f55800;
+  color:#f55800;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
 
 button:disabled {
-  color: #5b5957;
-  background: #f4f1f0;
+  color:#5b5957;
+  background:#f4f1f0;
 }
 
 /* Multi stories and featured image section */
@@ -315,7 +315,7 @@ button:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091e42;
+  color:#091e42;
 }
 
 .tags {
@@ -386,7 +386,7 @@ button:disabled {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: rgb(250, 248, 248);
+  color:rgb(250, 248, 248);
   padding: 5px 20px;
 }
 
@@ -422,7 +422,7 @@ button:disabled {
 
 .work-cards li {
   background: rgba(255, 255, 255, 0.24);
-  color: #fff;
+  color: fff;
   text-decoration: none;
   border: 1px solid;
   list-style: none;
