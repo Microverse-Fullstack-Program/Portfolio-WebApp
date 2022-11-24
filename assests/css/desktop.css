@@ -428,7 +428,7 @@
 
   .modal-header {
     row-gap: 1px;
-    margin-bottom: 37px;
+    margin-bottom: 10px;
     padding-left: 35px;
   }
 
@@ -456,11 +456,15 @@
     padding-top: 10px;
   }
 
+  .modal-tags {
+    margin-left: 5px;
+  }
+
   .modal-body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 35px;
+    padding: 20px;
   }
 
   .modal-mobImage {
