@@ -94,8 +94,8 @@ const gridContainer = document.querySelector('.work-grid');
 
 // Load featured-work
 const printFeaturedWork = (array) => {
-  const featuredWorkData = array.map((cardsData) =>
-    `<div class="mob-Placeholder"><img  src=${cardsData.mobileImg} alt="Work card image"></div>
+  const featuredWorkData = array.map((cardsData) => `<div class="mob-Placeholder">
+    <img  src=${cardsData.mobileImg} alt="Work card image"></div>
     <div class="desk-Placeholder"><img  src=${cardsData.desktopImg} alt="Work card image"></div>
     <div class="right-block">
         <h2 class="workTitle">${cardsData.title}</h2>
@@ -118,8 +118,7 @@ const printFeaturedWork = (array) => {
 
 // Load first card
 const printCardOne = (array) => {
-  const cardOneData = array.map((cardsData) =>
-    `<div class="work-cards">
+  const cardOneData = array.map((cardsData) => `<div class="work-cards">
       <div class="card-img">
           <img class="mobile-img" src=${cardsData.mobileImg} alt="Work card image">
           <img class="desktop-img" src=${cardsData.desktopImg} alt="Work card image">
@@ -149,8 +148,7 @@ const printCardOne = (array) => {
 
 // Load the rest of the cards
 const printWProjectCards = (array) => {
-  const projectsCardData = array.map((cardsData) =>
-  `<div class="work-cards">
+  const projectsCardData = array.map((cardsData) => `<div class="work-cards">
       <div class="card-img">
           <img class="mobile-img" src=${cardsData.mobileImg} alt="Work card image">
           <img class="desktop-img" src=${cardsData.desktopImg} alt="Work card image">
@@ -214,16 +212,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
 /* Form validation */
 const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (event)=> {
-  let emailInput = contactForm.elements['email'];
-  let errorMsg =  document.getElementById('errorMsg');
+contactForm.addEventListener('submit', (event) => {
+  const emailInput = contactForm.elements.email;
+  const errorMsg = document.getElementById('errorMsg');
 
   /* check if the email is all in lower case or not */
-	if (emailInput.value !== emailInput.value.toLowerCase()) {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
     event.preventDefault();
     errorMsg.classList.add('errorMessage');
     errorMsg.innerText = 'Please enter the email address in lowercase!';
-  }else {
+  } else {
     errorMsg.classList.remove('errorMessage');
     contactForm.submit();
   }
