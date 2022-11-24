@@ -636,7 +636,7 @@ button[type="submit"] {
   line-height: 44px;
   color: #172b4d;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .close-btn {
@@ -645,7 +645,7 @@ button[type="submit"] {
   outline: none;
   background: none;
   color: #67798e;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
@@ -662,7 +662,7 @@ button[type="submit"] {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  margin-left: 10px;
+  margin: 20px 5px 5px 10px;
 }
 
 .modal-tags ul {
@@ -682,7 +682,7 @@ button[type="submit"] {
 .modal-body {
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 10px;
 }
 
 .modal-desktopImage {
@@ -719,6 +719,14 @@ button[type="submit"] {
   color: #fff;
   border: none;
   text-decoration: none;
+}
+
+.modal-btn:hover {
+  background: #fff5e1;
+  color: #f55800;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .display-modal {
