@@ -236,7 +236,7 @@ const messageInput = document.getElementById('message');
 function loadLocalStorage() {
   const contactData = JSON.parse(window.localStorage.getItem('contactData'));
   if (contactData) {
-    nameInput.value = contactData.name;
+    nameInput.value = contactData.fullname;
     emailInput.value = contactData.email;
     messageInput.value = contactData.message;
   }
