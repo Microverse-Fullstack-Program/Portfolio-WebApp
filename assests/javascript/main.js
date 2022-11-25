@@ -249,7 +249,7 @@ function onFormChange(event) {
   if (!contactData) {
     contactData = {};
   }
- 
+  
   const key = event.target.name;
   contactData[key] = event.target.value;
   contactData = JSON.stringify(contactData);
