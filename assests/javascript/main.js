@@ -249,13 +249,13 @@ function onFormChange(event) {
   if (!contactData) {
     contactData = {};
   }
-
+  
   const key = event.target.name;
   contactData[key] = event.target.value;
   contactData = JSON.stringify(contactData);
   window.localStorage.setItem('contactData', contactData);
 }
- 
+
 nameInput.addEventListener('change', onFormChange);
 emailInput.addEventListener('change', onFormChange);
 messageInput.addEventListener('change', onFormChange);
