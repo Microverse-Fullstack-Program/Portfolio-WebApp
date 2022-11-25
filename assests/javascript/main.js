@@ -243,15 +243,15 @@ function loadLocalStorage() {
 }
 
 // Save in the local storage onchnage of the windowa */
-function onFormChange(e) {
+function onFormChange(event) {
   let contactData = JSON.parse(window.localStorage.getItem('contactData'));
 
   if (!contactData) {
     contactData = {};
   }
 
-  const key = e.target.name;
-  contactData[key] = e.target.value;
+  const key = event.target.name;
+  contactData[key] = event.target.value;
   contactData = JSON.stringify(contactData);
   window.localStorage.setItem('contactData', contactData);
 }
